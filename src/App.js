@@ -2,9 +2,10 @@
 import React from "react";
 import { Route, BrowserRouter } from "react-router-dom";
 
-import Home from '../src/pages/Home';
-import Categoria from '../src/pages/Categoria';
-import Produto from '../src/pages/Produto';
+import Home from './pages/Home/Home';
+import Categoria from './pages/Categoria/Categoria';
+import Produto from './pages/Produto/Produto';
+import './styles/main.sass';
 
 const Routes = () => {
    return(

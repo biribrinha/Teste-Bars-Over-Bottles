@@ -1,0 +1,23 @@
+.containers{
+    display: flex;
+    flex-direction: column;
+    background-color:aquamarine;
+}
+
+.container1 ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container1 li{
+    display: flex;
+    list-style: none;
+
+}
+
+.container2 ul{
+   display: flex;
+   list-style: none;
+   justify-content: space-evenly;
+}
+
