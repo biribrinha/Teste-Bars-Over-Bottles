@@ -1,23 +1,38 @@
-.containers{
-    display: flex;
+.containers {
+    display       : flex;
     flex-direction: column;
-    background-color:aquamarine;
 }
 
-.container1 ul{
-    display: flex;
+.container1 {
+    padding-top   : 35px;
+    padding-bottom: 35px;
+}
+
+.container1 tspan{
+    font-size: 28px;
+}
+
+.container1 ul {
+    display        : flex;
     justify-content: space-around;
 }
 
-.container1 li{
-    display: flex;
+.container1 li {
+    display   : flex;
     list-style: none;
 
+
 }
 
-.container2 ul{
-   display: flex;
-   list-style: none;
-   justify-content: space-evenly;
+.container2 ul {
+    display        : flex;
+    list-style     : none;
+    justify-content: center;
+    margin: 20px;
+
 }
 
+.container2 li {
+    margin: 20px;
+    text-transform: uppercase;
+}

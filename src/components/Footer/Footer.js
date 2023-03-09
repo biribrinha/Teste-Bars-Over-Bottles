@@ -1,10 +1,15 @@
+import IconFacebook from './img/gg_facebook.png';
+import IconTwitter from './img/mingcute_twitter-fill.png';
+import IconInstagram from './img/typcn_social-instagram.png';
+import IconTumblr from './img/uil_tumblr.png';
+import IconPinterest from './img/fa_pinterest.png';
 
 import '../Footer/footer.scss';
 
 function Footer() {
 
     return (
-        <div>
+        <div className="mainFooter">
             <div className="containersFooter">
                 <div className="containerFooter1">
                     <ul>
@@ -29,6 +34,7 @@ function Footer() {
                 </div>
             </div>
 
+            <div className="linha"></div>
             <div className="parteInferior">
 
                 <div className="parte1">
@@ -42,12 +48,11 @@ function Footer() {
                     </ul>
                 </div>
                 <div className="parte3">
-                    <p>imagem</p>
-                    <p>imagem</p>
-                    <p>imagem</p>
-                    <p>imagem</p>
-                    <p>imagem</p>
-
+                <img src={IconFacebook} />
+                <img src={IconTwitter} />
+                <img src={IconInstagram} />
+                <img src={IconTumblr} />
+                <img src={IconPinterest} />
                 </div>
             </div>
         </div>

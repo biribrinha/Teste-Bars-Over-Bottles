@@ -9,7 +9,7 @@ function Header() {
             <div className="container1">
                 <ul>
                     <li>11 4191 4399</li>
-                    <li>logo</li>
+                    <tspan x="108.94" y="325">AVIATO</tspan>
                     <li>carrinho</li>
                 </ul>
             </div>
