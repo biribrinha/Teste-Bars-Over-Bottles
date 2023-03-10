@@ -1,0 +1,138 @@
+.containersProduto {
+    width     : 1152px;
+    height    : 599px;
+    margin    : 0 auto;
+    margin-top: 57px;
+}
+
+
+
+.amostraProduto {
+    display        : flex;
+    justify-content: space-between;
+}
+
+.bannerProduto {
+    width           : 100%;
+    height          : 141px;
+    background-color: #454545;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    color           : #fff;
+}
+
+.descricaoProduto {
+    width          : 459px;
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-around;
+
+}
+
+.linha1 {
+    border: 1px solid #e7e7e762;
+    width : 459px;
+    height: 0;
+    margin: 0 auto;
+}
+
+.descricaoProduto h1 {
+    color      : #777777;
+    font-weight: 300;
+}
+
+.preco {
+    font-weight: 600;
+    color      : #333333;
+    font-size  : 30px;
+}
+
+.descricao {
+    color    : #7B7B7B;
+    font-size: 13px;
+}
+
+.cores h2 {
+    color     : #333333;
+    font-size : 13px;
+    text-align: start;
+}
+
+.selectCores {
+    display: flex;
+}
+
+.selectCores option {
+    margin: 5px;
+    cursor: pointer;
+}
+
+
+.azul {
+    background: #0069CB;
+    width     : 21px;
+    height    : 21px;
+}
+
+.rosa {
+    background: #FF6565;
+    width     : 21px;
+    height    : 21px;
+}
+
+.roxo {
+    background: #7854FF;
+    width     : 21px;
+    height    : 21px;
+}
+
+.verde {
+    background: #00CD65;
+    width     : 21px;
+    height    : 21px;
+}
+
+.selectTamanhos h3 {
+    color     : #333333;
+    font-size : 13px;
+    text-align: start;
+}
+
+.selectTamanhos ul {
+    display: flex;
+}
+
+.selectTamanhos li {
+    margin     : 5px;
+    padding    : 5px;
+    list-style : none;
+    background : #EFEFEF;
+    color      : #333333;
+    font-weight: 550;
+}
+
+.contagem {
+    display    : flex;
+    align-items: center;
+}
+
+.adicionarMais {
+    display        : flex;
+    align-items    : center;
+    justify-content: space-around;
+    width          : 210px;
+    height         : 55px;
+    background     : #FFFFFF;
+    border         : 1px solid #CCCCCC;
+}
+
+.retirar {
+    color      : #CCCCCC;
+    font-weight: 600;
+}
+
+.quantidade,
+.adicionar {
+    font-weight: 600;
+}
