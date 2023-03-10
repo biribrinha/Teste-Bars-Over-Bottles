@@ -1,0 +1,48 @@
+.bannerCategoria {
+    height         : 300px;
+    background     : #454545;
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : center;
+    color          : #fff;
+}
+
+.paginacao {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    margin: 50px;
+}
+
+.paginacao a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color          : #333333;
+    font-weight    : 600;
+    width     : 34px;
+    height    : 34px;
+    background: #fff;
+
+}
+
+
+.paginacao a:hover {
+    width     : 34px;
+    height    : 34px;
+    background: #333333;
+    color     : #fff;
+
+}
+
+.buttomPaginacao button {
+    width      : 34px;
+    height     : 34px;
+    background : #FFFFFF;
+    border     : 1px solid #CCCCCC;
+    color      : #333333;
+    font-weight: 600;
+    cursor     : pointer;
+}
