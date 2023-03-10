@@ -1,35 +1,58 @@
 .containers {
-    display       : flex;
+    display: flex;
     flex-direction: column;
+    width: 1152px;
+    margin: 0 auto;
 }
 
 .container1 {
-    padding-top   : 35px;
+    padding-top: 35px;
     padding-bottom: 35px;
-}
-
-.container1 tspan{
-    font-size: 28px;
-}
-
-.container1 ul {
-    display        : flex;
+    display: flex;
     justify-content: space-around;
 }
 
-.container1 li {
-    display   : flex;
-    list-style: none;
-
-
+.container1 tspan {
+    font-size: 25px;
 }
 
+.telefone {
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    align-items: center;
+    color: #333333;
+}
+
+.telefone img {
+    width: 20px;
+    height: 20px;
+}
+
+.carrinho {
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    align-items: center;
+}
+
+.carrinho img {
+    width: 15px;
+    height: 20px;
+}
+
+.carrinho p{
+    color: #A9A9A9;
+}
+.precoBold {
+    font-weight: 600;
+    color: #000 !important;
+}
 .container2 ul {
-    display        : flex;
-    list-style     : none;
+    display: flex;
+    list-style: none;
     justify-content: center;
     margin: 20px;
-
 }
 
 .container2 li {

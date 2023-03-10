@@ -42,9 +42,18 @@ function Home() {
                     </div>
                 </div>
 
+                <div className="linha"></div>
+                <h3>Populares</h3>
+                <Cards />
+
+                <div className="espaçoBTN">
+                <div className="btnCategoria">
+                    <button>Ver Mais Produtos</button>
+                </div>
+                </div>
+                
             </div>
 
-            <Cards />
 
             <Footer />
 

@@ -30,7 +30,9 @@ function Footer() {
 
                 <div className="containerFooter3">
                     <p>Cadastre-se e receba nossas novidades</p>
+                    <div className='cadastro'>
                     <p>cadastrar</p>
+                    </div>
                 </div>
             </div>
 

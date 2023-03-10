@@ -1,17 +1,14 @@
-
-.mainFooter{
-    background-color: #FAFAFA;
-
+.mainFooter {
+    background-color: #fafafa;
 }
 
-
 .containersFooter {
-    display         : flex;
-    justify-content : space-around;
-    text-transform  : uppercase;
-    width : 1152px;
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+    width: 1152px;
     margin: 0 auto;
-
+    padding: 30px;
 }
 
 .containerFooter1 ul {
@@ -19,7 +16,9 @@
 }
 
 .containerFooter1 li {
-    margin: 10px;
+    margin: 20px;
+    font-weight: 600;
+    color: #333333;
 }
 
 .containerFooter2 ul {
@@ -27,47 +26,70 @@
 }
 
 .containerFooter2 li {
-    margin: 10px;
+    margin: 20px;
+    font-weight: 600;
+    color: #333333;
 }
 
 .containerFooter3 {
-    margin: 10px;
+    margin: 20px;
+    font-weight: 600;
+    color: #333333;
+}
 
+.cadastro {
+    width: 352px;
+    height: 50px;
+    background: #ffffff;
+    border: 1px solid #c0c0c0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.cadastro p{
+    font-weight: 600;
+    margin: 10px;
 }
 
 .linha {
-    border: 1px solid #E7E7E7;
-    width : 1152px;
+    border: 1px solid #e7e7e762;
+    width: 1152px;
     height: 0;
     margin: 0 auto;
 }
 
 .parteInferior {
-    display        : flex;
-    justify-content : space-around;
-    text-transform  : uppercase;
-    width : 1152px;
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+    width: 1152px;
     margin: 0 auto;
     padding: 30px;
     align-items: center;
+}
 
+.parte1{
+    font-weight: 600;
 }
 
 .parte2 ul {
     list-style: none;
-    display   : flex;
+    display: flex;
 }
 
-.parte2 li{
+.parte2 li {
     margin: 15px;
+    font-weight: 600;
+    color: #333333;
 }
 
 .parte3 {
     display: flex;
-    
 }
 
-.parte3 img{
+.parte3 img {
     margin: 15px;
 }
-

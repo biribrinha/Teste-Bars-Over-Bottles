@@ -1,25 +1,25 @@
 import React, { useEffect, useState } from "react";
-import '../Footer/footer.scss';
+import '../Cards/cards.scss';
 
-function Footer() {
-    const [repositories, setRepositories] = useState([])
+function Cards() {
+  const [repositories, setRepositories] = useState([])
 
-    useEffect(() => {
-        fetch(
-          "https://bob-teste-front-end.herokuapp.com/api/products.json/"
-        )
-          .then((resp) => resp.json())
-          .then((data) => {
-            setRepositories(data(data.products));
-           
-          });
-      }, []);
+  useEffect(() => {
+    fetch(
+      "https://bob-teste-front-end.herokuapp.com/api/products.json/"
+    )
+      .then((resp) => resp.json())
+      .then((data) => {
+        setRepositories(data(data.products));
 
-      console.log(setRepositories);
-    return (
-        <div>
-           
-        <div className="container">
+      });
+  }, []);
+
+  console.log(setRepositories);
+  return (
+    <div>
+
+      <div className="container">
         <div className="feed">
           {repositories.map((repo) => {
             return (
@@ -30,13 +30,24 @@ function Footer() {
               </div>
             );
           })}
+
+          <article className="card">
+            <div className="bordaImg">
+              <span>imagem</span>
+            </div>
+            <div className="contentCard">
+              <h4>Nome</h4>
+              <p>R$ 150.55</p>
+            </div>
+
+          </article>
         </div>
-        </div>
-        </div>
+      </div>
+    </div>
 
 
 
-    )
+  )
 }
 
-export default Footer;
+export default Cards;
