@@ -31,7 +31,7 @@ function Footer() {
                 <div className="containerFooter3">
                     <p>Cadastre-se e receba nossas novidades</p>
                     <div className='cadastro'>
-                    <p>cadastrar</p>
+                        <p>cadastrar</p>
                     </div>
                 </div>
             </div>
@@ -50,11 +50,11 @@ function Footer() {
                     </ul>
                 </div>
                 <div className="parte3">
-                <img src={IconFacebook} />
-                <img src={IconTwitter} />
-                <img src={IconInstagram} />
-                <img src={IconTumblr} />
-                <img src={IconPinterest} />
+                    <img src={IconFacebook} />
+                    <img src={IconTwitter} />
+                    <img src={IconInstagram} />
+                    <img src={IconTumblr} />
+                    <img src={IconPinterest} />
                 </div>
             </div>
         </div>

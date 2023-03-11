@@ -2,16 +2,15 @@ import React, { useEffect, useState } from "react";
 import '../Cards/cards.scss';
 
 function Cards() {
-  const [repositories, setRepositories] = useState([])
+  const [repositories, setRepositories] = useState([]);
+
+  
 
   useEffect(() => {
-    fetch(
-      "https://bob-teste-front-end.herokuapp.com/api/products.json/"
-    )
+    fetch("https://bob-teste-front-end.herokuapp.com/api/products.json")
       .then((resp) => resp.json())
       .then((data) => {
-        setRepositories(data(data.products));
-
+        setRepositories(data);
       });
   }, []);
 
@@ -39,8 +38,49 @@ function Cards() {
               <h4>Nome</h4>
               <p>R$ 150.55</p>
             </div>
-
           </article>
+
+          <article className="card">
+            <div className="bordaImg">
+              <span>imagem</span>
+            </div>
+            <div className="contentCard">
+              <h4>Nome</h4>
+              <p>R$ 150.55</p>
+            </div>
+          </article>
+
+          <article className="card">
+            <div className="bordaImg">
+              <span>imagem</span>
+            </div>
+            <div className="contentCard">
+              <h4>Nome</h4>
+              <p>R$ 150.55</p>
+            </div>
+          </article>
+
+          <article className="card">
+            <div className="bordaImg">
+              <span>imagem</span>
+            </div>
+            <div className="contentCard">
+              <h4>Nome</h4>
+              <p>R$ 150.55</p>
+            </div>
+          </article>
+
+          <article className="card">
+            <div className="bordaImg">
+              <span>imagem</span>
+            </div>
+            <div className="contentCard">
+              <h4>Nome</h4>
+              <p>R$ 150.55</p>
+            </div>
+          </article>
+
+
         </div>
       </div>
     </div>

@@ -24,12 +24,24 @@ function Header() {
 
             <div className="container2">
                 <ul>
-                    <li>Home</li>
-                    <li>Camisas</li>
-                    <li>Blusas</li>
-                    <li>Calças</li>
-                    <li>Acessórios</li>
-                    <li>Outlet</li>
+                    <li>
+                        <a href='/'>Home</a>
+                    </li>
+                    <li>
+                        <a href='/categoria'>Camisas</a>
+                    </li>
+                    <li>
+                        <a href='/categoria'>Blusas</a>
+                    </li>
+                    <li>
+                        <a href='/categoria'>Calças</a>
+                    </li>
+                    <li>
+                        <a href='/categoria'>Acessórios</a>
+                    </li>
+                    <li className='outlet'>
+                        <a href='/categoria'>Outlet</a>
+                    </li>
                 </ul>
             </div>
         </div>

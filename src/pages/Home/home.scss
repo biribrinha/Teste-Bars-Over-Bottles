@@ -3,7 +3,7 @@
     background-image: url(./img/banner.jpg);
     padding: 200px 0;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
 }
 
 .bannerContainer {
@@ -18,7 +18,7 @@
 .bannerContainer1 {
     display: flex;
     flex-direction: column;
-    justify-content: space-betweespaen;
+    justify-content: space-between;
 }
 .bannerContainer1 h1 {
     text-transform: uppercase;
@@ -31,9 +31,10 @@
     font-size: 20px;
 }
 
-.bannerContainer2, .btnCategoria {
+.bannerContainer2,
+.btnCategoria {
     width: 210px;
-    height: 55px;
+    height: 60px;
     background: #333333;
     display: flex;
     align-items: center;
@@ -42,11 +43,11 @@
     margin-top: 100px;
 }
 
-.bannerContainer2 button, .btnCategoria button {
+.bannerContainer2 button,
+.btnCategoria button {
     text-align: center;
-    color: #fff;
-    width: 200px;
-    height: 44px;
+    width: 199px;
+    height: 50px;
     border: 1px solid #ffffff85;
     background: #333333;
     cursor: pointer;
@@ -54,7 +55,14 @@
     font-weight: 600;
 }
 
-h2, h3 {
+.bannerContainer2 a,
+.btnCategoria a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h2,
+h3 {
     text-align: center;
     text-transform: uppercase;
     font-size: 32px;
@@ -63,7 +71,6 @@ h2, h3 {
     padding-top: 80px;
     padding-bottom: 30px;
 }
-
 
 .containerCategoria {
     display: flex;
@@ -96,12 +103,52 @@ h2, h3 {
     height: 670px;
 }
 
-.btnCategoria{
+.btnCategoria {
     margin: 0 auto;
 }
 
-.espaçoBTN{
-
+.espaçoBTN {
     padding: 50px;
 }
 
+@media screen and (max-width: 992px) {
+    .containerCategoria {
+        width: 700px;
+    }
+
+    .sessao1 img {
+        width: 350px;
+        margin: 10px;
+    }
+
+    .sessao2 img {
+        height: 470px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #banner {
+        background-size: cover;
+    }
+    .bannerContainer {
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+        margin-bottom: 40px;
+        text-align: center;
+        width: 400px;
+        padding: 0;
+    }
+    .containerCategoria {
+        width: 400px;
+    }
+
+    .sessao1 img {
+        width: 190px;
+        margin: 10px;
+    }
+
+    .sessao2 img {
+        height: 270px;
+    }
+}

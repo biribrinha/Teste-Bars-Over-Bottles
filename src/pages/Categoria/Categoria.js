@@ -9,7 +9,7 @@ function Categoria() {
 
     return (
 
-        <div>
+        <div className='mainCategoria'>
             <Header />
             <div className="bannerCategoria">
                 <h1>Blusas</h1>
@@ -25,31 +25,31 @@ function Categoria() {
             </div>
 
             <div className="cabecalhoCategoria">
+
+
                 <div className="filtroCategoria">
                     <div className="ordenar">
-                        <h2>Ordenar</h2>
-                        <p>: Nome</p>
+                        <p className='tituloFiltro'>Ordenar</p>
+                        <p className='resultadoFiltro'>: Nome</p>
                     </div>
 
                     <div className="visualizar">
-                        <h3>Visualizar</h3>
-                        <p>: 9</p>
+                        <p className='tituloFiltro'>Visualizar</p>
+                        <p className='resultadoFiltro'>: 9</p>
                     </div>
                 </div>
 
                 <div className="view">
-                    <h4>View</h4>
-                    <img src={Image1} />
-                    <img src={Image2} />
-
-
+                    <p className='viewTitulo'>View</p>
+                        <img src={Image1} />
+                        <img src={Image2} />
                 </div>
             </div>
 
             <Cards />
 
-            <div class="paginacao">
-               
+            <div className="paginacao">
+
                 <a href="#" >1</a>
                 <a href="#" >2</a>
                 <a href="#" >3</a>

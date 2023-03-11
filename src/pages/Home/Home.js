@@ -22,7 +22,9 @@ function Home() {
                         <p>Separamos os melhores looks pra você neste 2023</p>
                     </div>
                     <div className="bannerContainer2">
-                        <button>Shop Now</button>
+                        <button>
+                            <a href="/categoria">Shop Now</a>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -47,11 +49,13 @@ function Home() {
                 <Cards />
 
                 <div className="espaçoBTN">
-                <div className="btnCategoria">
-                    <button>Ver Mais Produtos</button>
+                    <div className="btnCategoria">
+                        <button>
+                            <a href="/categoria">Ver Mais Produtos</a>
+                        </button>
+                    </div>
                 </div>
-                </div>
-                
+
             </div>
 
 

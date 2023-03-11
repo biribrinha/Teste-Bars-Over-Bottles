@@ -1,138 +1,245 @@
 .containersProduto {
-    width     : 1152px;
-    height    : 599px;
-    margin    : 0 auto;
+    width: 1107px;
+    margin: 0 auto;
     margin-top: 57px;
 }
 
-
-
 .amostraProduto {
-    display        : flex;
+    display: flex;
     justify-content: space-between;
 }
 
 .bannerProduto {
-    width           : 100%;
-    height          : 141px;
+    width: 100%;
+    height: 141px;
     background-color: #454545;
-    display         : flex;
-    justify-content : center;
-    align-items     : center;
-    color           : #fff;
-}
-
-.descricaoProduto {
-    width          : 459px;
-    display        : flex;
-    flex-direction : column;
-    justify-content: space-around;
-
-}
-
-.linha1 {
-    border: 1px solid #e7e7e762;
-    width : 459px;
-    height: 0;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
 }
 
 .descricaoProduto h1 {
-    color      : #777777;
-    font-weight: 300;
+    color: #777777;
+    font-size: 29px;
+    font-weight: 200;
 }
 
 .preco {
+    font-size: 29px;
+    color: #333333;
     font-weight: 600;
-    color      : #333333;
-    font-size  : 30px;
 }
 
-.descricao {
-    color    : #7B7B7B;
-    font-size: 13px;
+.descricao p {
+    font-size: 14px;
+    color: #929292;
+    font-weight: 600;
+    height: 181px;
+    display: flex;
+    align-items: center;
+}
+.cabecalhoProduto {
+    display: flex;
+    flex-direction: column;
+    height: 264px;
+    width: 459px;
+}
+.tituloValor {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 82px;
 }
 
-.cores h2 {
-    color     : #333333;
-    font-size : 13px;
+.parteinferiorProduto {
+    display: flex;
+    flex-direction: column;
+}
+
+.cores {
+    margin-top: 50px;
+    margin-bottom: 32px;
+}
+.cores h3 {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #333333;
     text-align: start;
+    padding: 0;
+    margin-bottom: 20px;
+}
+.vermelho {
+    color: #f90000;
 }
 
 .selectCores {
     display: flex;
 }
 
-.selectCores option {
+.selectCores input {
+    cursor: pointer;
+    width: 22px;
+    height: 22px;
     margin: 5px;
+    padding: 5px;
+}
+
+.checkboxAzul > input {
+    appearance: none;
+    border: none;
+    background-color: #0069cb;
     cursor: pointer;
 }
 
-
-.azul {
-    background: #0069CB;
-    width     : 21px;
-    height    : 21px;
+.checkboxAzul > input:checked {
+    border: 1px solid #666666;
 }
 
-.rosa {
-    background: #FF6565;
-    width     : 21px;
-    height    : 21px;
+.checkboxRosa > input {
+    appearance: none;
+    border: none;
+    background-color: #ff6565;
+    cursor: pointer;
 }
 
-.roxo {
-    background: #7854FF;
-    width     : 21px;
-    height    : 21px;
+.checkboxRoxo > input {
+    appearance: none;
+    border: none;
+    background-color: #7854ff;
+    cursor: pointer;
 }
 
-.verde {
-    background: #00CD65;
-    width     : 21px;
-    height    : 21px;
+.checkboxVerde > input {
+    appearance: none;
+    border: none;
+    background-color: #00cd65;
+    cursor: pointer;
+}
+
+.selectTamanhos {
+    width: 195px;
 }
 
 .selectTamanhos h3 {
-    color     : #333333;
-    font-size : 13px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #333333;
     text-align: start;
+    padding: 0;
+    margin-bottom: 20px;
 }
-
 .selectTamanhos ul {
     display: flex;
 }
 
 .selectTamanhos li {
-    margin     : 5px;
-    padding    : 5px;
-    list-style : none;
-    background : #EFEFEF;
-    color      : #333333;
+    margin: 5px;
+    padding: 5px;
+    list-style: none;
+    background: #efefef;
+    color: #333333;
     font-weight: 550;
+    cursor: pointer;
+}
+
+.selectTamanhos li:hover {
+    background-color: #333333;
+    color: #fff;
+}
+
+.linha1 {
+    border: 1px solid #e7e7e762;
+    width: 459px;
+    height: 0;
+    margin: 0 auto;
 }
 
 .contagem {
-    display    : flex;
+    display: flex;
     align-items: center;
 }
 
 .adicionarMais {
-    display        : flex;
-    align-items    : center;
+    display: flex;
+    align-items: center;
     justify-content: space-around;
-    width          : 210px;
-    height         : 55px;
-    background     : #FFFFFF;
-    border         : 1px solid #CCCCCC;
+    width: 170px;
+    height: 60px;
+    background: #ffffff;
+    border: 1px solid #cccccc;
 }
 
 .retirar {
-    color      : #CCCCCC;
+    color: #cccccc;
     font-weight: 600;
 }
 
 .quantidade,
 .adicionar {
     font-weight: 600;
+}
+
+.sobreProduto h3 {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #333333;
+    text-align: start;
+    padding: 0;
+}
+
+.containerSobre {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+.containerSobre a {
+    cursor: pointer;
+}
+
+.textoSobre {
+    width: 444px;
+}
+
+.textoSobre p {
+    margin-left: 10px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: #929292;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 992px) {
+    .containersProduto {
+        width: 700px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .amostraProduto {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .containersProduto {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .amostraProduto {
+        flex-direction: column;
+        width: 450px;
+    }
+
+    .carrouselProduto img {
+        width: 400px;
+    }
 }

@@ -2,14 +2,16 @@
     display: flex;
     flex-direction: column;
     width: 1152px;
+    height: 233px;
     margin: 0 auto;
 }
 
 .container1 {
+    width: 1113px;
     padding-top: 35px;
     padding-bottom: 35px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .container1 tspan {
@@ -41,21 +43,70 @@
     height: 20px;
 }
 
-.carrinho p{
-    color: #A9A9A9;
+.carrinho p {
+    color: #a9a9a9;
 }
 .precoBold {
     font-weight: 600;
     color: #000 !important;
 }
-.container2 ul {
+
+.container2 {
+    width: 100%;
+    height: 109px;
     display: flex;
-    list-style: none;
+    align-items: center;
     justify-content: center;
-    margin: 20px;
+}
+.container2 ul {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .container2 li {
-    margin: 20px;
+    list-style: none;
+}
+
+.container2 a {
     text-transform: uppercase;
+    text-decoration: none;
+    color: #333333;
+}
+
+.container2 a:hover {
+    font-weight: bold;
+}
+
+.outlet a {
+    color: #f90000;
+}
+
+@media screen and (max-width: 992px) {
+    .containers {
+        width: 700px;
+    }
+
+    .container1 {
+        width: 100%;
+    }
+
+    .container2 ul {
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .containers {
+        width: 450px;
+    }
+
+    .container1 {
+        width: 100%;
+    }
+
+    .container2 ul {
+        width: 100%;
+    }
 }

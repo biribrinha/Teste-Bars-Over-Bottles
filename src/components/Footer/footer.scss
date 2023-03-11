@@ -49,7 +49,12 @@
     cursor: pointer;
 }
 
-.cadastro p{
+.cadastro:hover {
+    background: #333333;
+    color: #ffffff;
+}
+
+.cadastro p {
     font-weight: 600;
     margin: 10px;
 }
@@ -71,7 +76,7 @@
     align-items: center;
 }
 
-.parte1{
+.parte1 {
     font-weight: 600;
 }
 
@@ -92,4 +97,41 @@
 
 .parte3 img {
     margin: 15px;
+}
+
+@media screen and (max-width: 992px) {
+    .containersFooter {
+        width: 700px;
+    }
+
+    .parteInferior {
+        width: 100%;
+    }
+    .linha {
+        width: 700px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .containersFooter {
+        width: 400px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .parteInferior {
+        width: 400px;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .parte2 ul {
+        flex-direction: column;
+    }
+
+    .linha {
+        width: 400px;
+    }
 }
