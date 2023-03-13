@@ -7,7 +7,8 @@ function Cards() {
 
 
   useEffect(() => {
-    fetch("http://localhost:8080/https://bob-teste-front-end.herokuapp.com/api/products.json")
+    // fetch("http://localhost:8080/https://bob-teste-front-end.herokuapp.com/api/products.json") // url usada com o cors anywere
+    fetch("https://bob-teste-front-end.herokuapp.com/api/products.json")
       .then((resp) => resp.json())
       .then((data) => {
         setRepositories(data);
