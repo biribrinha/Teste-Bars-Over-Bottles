@@ -134,6 +134,7 @@ function Produto() {
             </div>
             <h2>Produtos Relacionados</h2>
             <Cards />
+            <div className='espaco'></div>
             <Footer />
         </div>
     )

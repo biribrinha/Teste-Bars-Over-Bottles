@@ -4,10 +4,10 @@ import '../Cards/cards.scss';
 function Cards() {
   const [repositories, setRepositories] = useState([]);
 
-  
+
 
   useEffect(() => {
-    fetch("https://bob-teste-front-end.herokuapp.com/api/products.json")
+    fetch("http://localhost:8080/https://bob-teste-front-end.herokuapp.com/api/products.json")
       .then((resp) => resp.json())
       .then((data) => {
         setRepositories(data);
@@ -22,63 +22,21 @@ function Cards() {
         <div className="feed">
           {repositories.map((repo) => {
             return (
-              <div className="card">
-                <div className="imageCard">
-                  <img src={repo.photo} />
-                </div>
-              </div>
+              <a href="/produto">
+                <article className="card">
+                  <div className="bordaImg">
+                    <img src={repo.photo} />
+                  </div>
+                  <div className="contentCard">
+                    <h4>{repo.name}</h4>
+                    <p>{repo.price}</p>
+                  </div>
+                </article>
+              </a>
             );
           })}
 
-          <article className="card">
-            <div className="bordaImg">
-              <span>imagem</span>
-            </div>
-            <div className="contentCard">
-              <h4>Nome</h4>
-              <p>R$ 150.55</p>
-            </div>
-          </article>
 
-          <article className="card">
-            <div className="bordaImg">
-              <span>imagem</span>
-            </div>
-            <div className="contentCard">
-              <h4>Nome</h4>
-              <p>R$ 150.55</p>
-            </div>
-          </article>
-
-          <article className="card">
-            <div className="bordaImg">
-              <span>imagem</span>
-            </div>
-            <div className="contentCard">
-              <h4>Nome</h4>
-              <p>R$ 150.55</p>
-            </div>
-          </article>
-
-          <article className="card">
-            <div className="bordaImg">
-              <span>imagem</span>
-            </div>
-            <div className="contentCard">
-              <h4>Nome</h4>
-              <p>R$ 150.55</p>
-            </div>
-          </article>
-
-          <article className="card">
-            <div className="bordaImg">
-              <span>imagem</span>
-            </div>
-            <div className="contentCard">
-              <h4>Nome</h4>
-              <p>R$ 150.55</p>
-            </div>
-          </article>
 
 
         </div>
